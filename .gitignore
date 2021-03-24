@@ -1,0 +1,7 @@
+config.h
+dwm
+dwm-msg
+/*.o
+/*.diff
+/*.orig
+/*.rej
