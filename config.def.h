@@ -148,7 +148,7 @@ static Key keys[] = {
   { MODKEY|ControlMask, XK_b,                      setlayout,      {.v = &layouts[5]} },  //bstack
   { MODKEY|ControlMask, XK_g,                      setlayout,      {.v = &layouts[7]} },  //grid
   { MODKEY|ControlMask|ShiftMask, XK_m,            setlayout,      {.v = &layouts[11]} }, //centered master
-  { MODKEY,             XK_space,                  setlayout,      {0} },
+  //{ MODKEY,             XK_space,                  setlayout,      {0} },
   { MODKEY|ShiftMask,   XK_space,                  togglefloating, {0} },
   { MODKEY|ShiftMask,   XK_f,                      togglefullscr,  {0} },
   { MODKEY,             XK_0,                      view,           {.ui = ~0 } },
@@ -197,6 +197,7 @@ static Key keys[] = {
   { MODKEY,             XK_e,                      spawn,          {.v = openEditor} },
   { MODKEY,             XK_y,                      spawn,          {.v = openYT} },
   { MODKEY,             XK_grave,                  spawn,          {.v = notifs} },
+  { MODKEY,             XK_s,                      togglesticky,   {0} },
 };
 
 /* button definitions */
