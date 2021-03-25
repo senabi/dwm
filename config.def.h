@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 1;   	/* 0: systray in the right corner, >0: systray on left of status text */
@@ -28,8 +28,8 @@ static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
 	/*               fg         bg        border   */
-	[SchemeNorm] = { "#D5C4A1", "#202020", "#3C3836"},
-	[SchemeSel]  = { "#FBF1C7", "#3C3836", "#FFAF3E"},
+	[SchemeNorm] = { "#D5C4A1", "#202020", "#464646"},
+	[SchemeSel]  = { "#FBF1C7", "#3C3836", "#7A675E"},
 };
 
 /* tagging */
@@ -182,8 +182,8 @@ static Key keys[] = {
   { 0,                  XF86XK_AudioPlay,	         spawn,          {.v = pausetrack } },
   { 0,                  XF86XK_AudioNext,    	     spawn,          {.v = nexttrack  } },
   { 0,                  XF86XK_AudioPrev,    	     spawn,          {.v = prevtrack  } },
-  { MODKEY|AltMask,     XK_j,                      shiftview,      {.i = -1 } },
-  { MODKEY|AltMask,     XK_k,                      shiftview,      {.i = +1 } },
+  { AltMask,            XK_j,                      shiftview,      {.i = -1 } },
+  { AltMask,            XK_k,                      shiftview,      {.i = +1 } },
   { MODKEY,             XK_m,                      focusmaster,    {0} },
   { 0,                  XF86XK_MonBrightnessUp,    spawn,          {.v = brightup } },
   { 0,                  XF86XK_MonBrightnessDown,  spawn,          {.v = brightdown } },
