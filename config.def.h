@@ -139,7 +139,7 @@ static Key keys[] = {
   { MODKEY,             XK_Return,                 zoom,           {0} },
   { MODKEY,             XK_Tab,                    view,           {0} },
   { MODKEY|ShiftMask,   XK_c,                      killclient,     {0} },
-  { MODKEY|ControlMask, XK_t,                      setlayout,      {.v = &layouts[0]} },  //tile
+  { MODKEY,             XK_t,                      setlayout,      {.v = &layouts[0]} },  //tile
   { MODKEY|ControlMask, XK_f,                      setlayout,      {.v = &layouts[13]} }, //float
   { MODKEY|ControlMask, XK_m,                      setlayout,      {.v = &layouts[1]} },  //mono
   { MODKEY|ControlMask, XK_s,                      setlayout,      {.v = &layouts[2]} },   //spiral
@@ -150,7 +150,7 @@ static Key keys[] = {
   { MODKEY|ControlMask|ShiftMask, XK_m,            setlayout,      {.v = &layouts[11]} }, //centered master
   //{ MODKEY,             XK_space,                  setlayout,      {0} },
   { MODKEY|ShiftMask,   XK_space,                  togglefloating, {0} },
-  { MODKEY|ShiftMask,   XK_f,                      togglefullscr,  {0} },
+  { MODKEY,             XK_f,                      togglefullscr,  {0} },
   { MODKEY,             XK_0,                      view,           {.ui = ~0 } },
   { MODKEY|ShiftMask,   XK_0,                      tag,            {.ui = ~0 } },
   { MODKEY,             XK_comma,                  focusmon,       {.i = -1 } },
